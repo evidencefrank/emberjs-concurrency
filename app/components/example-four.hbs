@@ -6,3 +6,7 @@
 {{else}}
   <h3>{{this.getNumberTask.last.value}}</h3>
 {{/if}}
+
+<i>{{if this.getNumberTask.last.isError 'Ooops!'}}</i>
+
+<button {{on 'click' this.cancel}}>Cancel</button>
